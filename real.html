@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitación</title>
+<link rel="stylesheet" href="style.css">
+    <style>
+html{
+   
+   overflow-x:hidden;
+    background-image: url("fondo.jpg");
+  background-size: cover;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+	@font-face {
+      font-family: 'letra';
+      src: url('boda.otf');
+}
+	@font-face {
+      font-family: 'nu';
+      src: url('1942.ttf');
+}
+	@font-face {
+      font-family: 'num';
+      src: url('Blacksword.otf');
+}
+header .logo img{
+bottom:50rem;
+position:relative;
+width:80px;
+heigth:80px;
+right: -2.5rem;
+}
+.frase cite{
+
+background-color:#D8C6A5;
+    font-family: nu;
+    font-size: 2rem;
+    color: #333;
+  position: relative;
+top:-30rem;
+width:70%;
+border:1px dotted #f00;
+padding:8px;
+margin:auto;
+border-color:#fff;
+display:flex;
+flex-wrap:wrap;
+  right: -1rem;
+}
+.nombres p{
+    font-family: num;
+    font-size: 6rem;
+    color: #fff;
+    text-align:center;
+  position: relative;
+  top: -5rem;
+}
+.nombres span{
+    font-family: num;
+    font-size: 6rem;
+    color: #fff;
+    text-align:center;
+  position: relative;
+  top: -5rem;
+padding:8px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+right:-6.5rem;
+}
+: root {
+
+--bgColor:rgb(255, 252, 241); }
+
+#slider {
+width:50%;
+height: 32vw;
+margin: 80px auto;
+transform-style: preserve-3d;
+font-family:"Helvetica Neue", sans-serif;
+perspective: 1400px;
+top :15rem;
+left:15rem;
+}
+
+input[type="radio"] {
+position: relative;
+top: 108%;
+left: 50%;
+width: 18px;
+height: 18px;
+margin: 0 15px 0 0;
+transform: translateX(-83px);
+cursor: pointer;
+opacity: 0.4;
+}
+input[type="radio"]:nth-child(5) {
+ margin-right: 0px;
+
+}
+
+input[type="radio"]:checked {
+opacity: 1;
+}
+
+#slider label, #slider label img { 
+    
+display: flex;
+position: absolute; 
+top: 0;
+left: 0;
+right: 10px;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+border-radius: 3px;
+color: white;
+font-size: 70px;
+font-weight: bold;
+cursor: pointer;
+transition: transform 400ms ease;
+
+}
+
+/* Active Slide */
+
+#s1:checked ~ #slidel,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+
+transform: translate3d (0%, 0, 0px);
+
+box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Next Slide */
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+
+transform: translate3d (20%, 0, -100px); 
+box-shadow: 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Previous Slide */
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1, 
+#s3:checked ~ #slide2, 
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+
+transform: translate3d(-20%, 0, -100px); box-shadow: 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+
+transform: translate3d(40%, 0, -250px);
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Previous to Previous Slide */
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+
+transform: translate3d(-40%, 0, -250px); box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+}
+.saludo a{
+position:relative;
+top:20rem;
+    font-family:num;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.saludo p{
+top:20rem;
+position:relative;
+    font-family:num;
+    font-size: 2rem;
+    color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.fecha p{
+    font-family:num;
+    font-size:3rem;
+    color: #fff;
+position: relative;
+top:30rem;
+width:70%;
+padding:8px;
+margin:auto;
+border-color:#fff;
+display:flex;
+flex-wrap:wrap;
+  right: -1rem;
+align-items: center;
+justify-content: center;
+} 	
+
+.fecha a{
+    font-family:nu;
+    font-size:3rem;
+    color: #fff;
+ position: relative;
+top: 1rem;
+  left: 0rem;
+} 
+.countdown {
+     font-family:nu;
+    font-size:6rem;
+    color: #fff;
+  position: relative;
+  top:30rem;
+  left: 4rem;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.countdown-timer {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.ubicacion .icon-location{
+display:flex;
+flex-wrap:wrap;
+    border-radius: 12px;
+    font-size: 10rem;
+   color:#ffff;
+    top:30rem;       
+position:relative;
+ align-content: center;
+justify-content: center;
+margin:auto;
+} 
+.ubicacion p{
+flex-wrap:wrap;
+margin:auto;
+display:flex;
+    font-size: 2rem;
+     font-family: num;
+    color:#fff;
+    top:30rem;
+    align-content: center;
+justify-content: center;
+position:relative;
+} 
+
+.asistencia .icon-whatsapp{
+display:flex;
+flex-wrap:wrap;
+    border-radius: 12px;
+    font-size: 10rem;
+   color:#ffff;
+    top:30rem;       
+position:relative;
+ align-content: center;
+justify-content: center;
+margin:auto;
+} 
+.asistencia p{
+flex-wrap:wrap;
+margin:auto;
+display:flex;
+    font-size: 2rem;
+     font-family: num;
+    color:#fff;
+    top:30rem;
+    align-content: center;
+justify-content: center;
+position:relative;
+} 
+
+
+
+
+@media(max-width:991px){
+html{
+   font-size:55%;
+}
+header{
+padding:2rem;
+}
+]
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<header>
+<div class="marco1">
+<img src="d.png">
+</div>
+<div class="logo" align="center">
+   <img src="a.png">    <img src="e.png"> <img src="c.png">
+     
+        </div>
+</header>
+<div class="frase">
+      <cite>
+ “El amor no es algo que uno sea capaz o no de hacer basado en la magia o en la química.
+ Eso es para obras de teatro. El amor es determinación. El amor es una elección que una hace”.
+</cite>
+        </div>
+
+    <div class="nombres">
+        <p>Yara Rodriguez</p>
+           <p>&</p>
+     <span>Ulises Hernandez</span>
+        </div>
+
+<div id="slider">
+<input type="radio" name="slider" id="s1" checked />
+<input type="radio" name="slider" id="s2" />
+<input type="radio" name="slider" id="s3" />
+<input type="radio" name="slider" id="s4" />
+<input type="radio" name="slider" id="s5" />
+<label for="s1" id="slide1">
+<img src="f5.jpg" alt />
+</label>
+<label for="s2" id="slide2">
+<img src="f1.jpeg" alt />
+</label>
+<label for="s3" id="slide3">
+<img src="f2.jpeg" alt />
+</label>
+<label for="s4" id="slide4">
+<img src="f3.jpeg" alt />
+</label>
+<label for="s5" id="slide5">
+<img src="f4.jpeg" alt />
+</label>
+</div>
+
+<div class="saludo">
+    <a>Hola amigos</a><br>
+<p>Nos sentimos muy emocionados de compartir con ustedes
+ nuestro aniversario de bodas de plata 
+.han pasado 25 anos desde que nos unimos en matrimonio
+ y ha sido un camino lleno de amor, compromiso y felicidad
+. nos gutaria tenerlos a todos ustedes para celebrar este
+ momento tan especial en nuestras vidas</p>
+ </div>
+    <div class="fecha">
+        <p>Miercoles<a>-31-</a>Mayo<a>-2023</a></p>
+       <p> A las  <a>3:00 </a>pm</p>
+   <p>cuenta regresiva</p>
+<div class="countdown">
+  <div class="countdown-timer"></div>
+</div>
+<script>
+  const countdownTimer = document.querySelector('.countdown-timer');
+
+  const countDownDate = new Date("may 31, 2023 15:00:00").getTime();
+
+  const x = setInterval(function() {
+
+    const now = new Date().getTime();
+
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownTimer.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+    if (distance < 0) {
+      clearInterval(x);
+      countdownTimer.innerHTML = "la espera ha termindado";
+    }
+  }, 1000);
+</script>
+    </div>
+<div class="ubicacion">
+<p>Ubicacion</p>
+<p>Cecytebc plantel Zona Rio</p>
+<a href="https://goo.gl/maps/ERXzzLqm6Vv9WzGZ7" class="icon-location"></a>
+</div>
+
+<div class="asistencia">
+<p>Confirma tu asistencia antes del 31 de mayo:</p>
+        <a href="https://wa.me/6643471033" target="_blank" class="icon-whatsapp" ></a>
+</div>
+</body>
+</html>
